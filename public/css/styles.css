@@ -38,3 +38,20 @@ html {
 	font-size: 12px;
   color: #fff;
 }
+
+.button {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button:hover {
+  background-color: #c0c1c2; /* Hover background color */
+}

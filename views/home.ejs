@@ -3,13 +3,17 @@
     <h1>Home</h1>
     <p> <%= startingContent %> </p>
 
-
+    <a href="/compose" class="button">Add Post</a>
   <%  posts.forEach(function(post){ %>
 
     <h1><%=post.title%></h1>
     <p>
     <%=post.content.substring(0, 100) + " ..."%>
-    <a href="/posts/<%=post.title%>">Read More</a>
+    <a href="/posts/<%=post._id%>">Read More</a>
+    <form action="/delete-post/<%= post._id %>" method="POST">
+      <input type="hidden" name="postId" value="<%= post._id %>">
+      <button type="submit">Delete</button>
+    </form>
     </p>
 
 
